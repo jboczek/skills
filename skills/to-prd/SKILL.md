@@ -1,6 +1,6 @@
 ---
 name: to-prd
-description: Turn rough feature ideas into concise PRDs for `docs/features/` with lightweight frontmatter, consistent sections, and right-sized scope. Use when creating or revising PRDs, feature specs, or product requirement documents.
+description: Turn rough feature ideas into concise PRDs for `docs/prds/` with lightweight frontmatter, consistent sections, and right-sized scope. Use when creating or revising PRDs, feature specs, or product requirement documents.
 ---
 
 # To PRD
