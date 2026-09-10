@@ -7,14 +7,12 @@ description: Turn rough feature ideas into concise PRDs for `docs/features/` wit
 
 ## Quick start
 
-Create each feature in a numbered folder under `docs/prds/`:
+Create each PRD in a numbered folder under `docs/prds/`:
 
 ```text
 docs/prds/
-└── prd-001-feature-name.md
+└── prd-YYYY-MM-DD-feature-name.md
 ```
-
-Use zero-padded three-digit numbers so features sort consistently.
   
 Create PRDs with this frontmatter:
 
