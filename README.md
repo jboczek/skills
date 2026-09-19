@@ -10,6 +10,7 @@ install, and manage these skills for Codex, Claude, and Copilot on macOS.
 
 | Skill | Description |
 |---|---|
+| [agents-add-task](skills/agents-add-task/SKILL.md) | Plans initiatives into implementation-ready Symphony tasks and creates validated dependency graphs in Todoist. |
 | [big-picture](skills/big-picture/SKILL.md) | Builds or updates a concise strategic overview of an IT product, feature, or technical solution. |
 | [challenger](skills/challenger/SKILL.md) | Challenges project documents and ideas in short rounds to expose high-impact assumptions, gaps, risks, and contradictions. |
 | [checkpoint](skills/checkpoint/SKILL.md) | Creates or restores an evidence-grounded, durable handoff so interrupted work can continue in another agent session. |
