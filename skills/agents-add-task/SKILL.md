@@ -39,7 +39,8 @@ Use the delegation standard from `junior-delegate`: explain the problem before m
 important decisions, name exact verified targets, and define observable verification. A task must be
 understandable without the original conversation.
 
-Use this body after the Symphony front matter. Omit `Out of scope` only when it adds no information.
+Use this body after the fenced Symphony front matter. Omit `Out of scope` only when it adds no
+information.
 
 ```markdown
 ## Goal
@@ -91,8 +92,10 @@ state exactly how it will be resolved.
 
 ## Symphony front matter
 
-Repository-backed agent tasks begin with YAML front matter:
+Repository-backed agent tasks begin with a fenced `yaml` code block containing the YAML front
+matter. Keep this block first in the Todoist description so the workflow metadata is easy to spot:
 
+````markdown
 ```yaml
 ---
 symphony:
@@ -109,6 +112,7 @@ symphony:
     merging: gpt-5.6-luna:xhigh
 ---
 ```
+````
 
 - `repo` is the exact repository name below the configured `repositories.root`. Omit it only for a
   genuinely non-repository deliverable.
@@ -165,20 +169,22 @@ Use only the official `td` CLI and the `_agents` project.
    incomplete graph. Use `--dry-run` for the first representative command, then create it and retain
    the returned JSON/ID:
 
-   ```sh
+   ````sh
    td task add "Implement explicit outcome" \
      --project _agents \
      --section Backlog \
      --stdin \
      --json <<'EOF'
+   ```yaml
    ---
    symphony:
      repo: repository-name
    ---
+   ```
 
    <complete implementation-ready description>
    EOF
-   ```
+   ````
 
 3. If required, create the single `[Human]` parent in `Backlog`, retain its ID, and add its subtasks:
 
@@ -198,10 +204,11 @@ Use only the official `td` CLI and the `_agents` project.
    ```
 
 4. Once all IDs exist, update dependent task descriptions with `depends_on`. Supply the entire
-   description through stdin so the front matter and task body remain one consistent document:
+   description through stdin so the fenced front matter and task body remain one consistent document:
 
-   ```sh
+   ````sh
    td task update id:<dependent-task-id> --stdin --json <<'EOF'
+   ```yaml
    ---
    symphony:
      repo: repository-name
@@ -209,10 +216,11 @@ Use only the official `td` CLI and the `_agents` project.
        - <blocker-task-id>
        - <human-task-id>
    ---
+   ```
 
    <complete implementation-ready description>
    EOF
-   ```
+   ````
 
 5. Re-read the complete project and validate before dispatch:
    - every referenced ID exists in `_agents`;
