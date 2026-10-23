@@ -178,7 +178,7 @@ Consider all dimensions below, but report only material findings. Do not create 
 - Is the change diagnosable in production when that matters?
 
 #### Design and maintainability
-- Cohesion and responsibility boundaries.
+- Cohesion and responsibility boundaries: does each component produce a result consistent with its contract, or does correctness depend on another component repairing it or on an implicit order of operations? Report a finding when this creates a concrete risk of inconsistent behavior, duplicated policy, or future misuse.
 - Consistency with repository architecture and nearby code.
 - Changeability and unnecessary complexity.
 - Language/platform idioms supported by repository evidence.
