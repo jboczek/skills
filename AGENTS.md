@@ -5,15 +5,18 @@
 ### Rules
 
 - Every skill lives in `skills/<skill-name>/SKILL.md` or `skills/<category>/<skill-name>/SKILL.md` and has YAML frontmatter with `name` and `description` fields.
-- The README skills table must stay in sync: one row per skill, sorted alphabetically by name. Links must point to the skill's actual `SKILL.md` path, including its category directory when present.
-- Pull the description from the `description` field in the skill's frontmatter — and summarize it. 
-- Table format:
+- Group skills in `README.md` by their category folder. Each category heading must include a short explanation of the group, followed by one bullet per skill.
+- Sort skill bullets alphabetically by name within each category. Links must point to the skill's actual `SKILL.md` path.
+- Pull each summary from the `description` field in the skill's frontmatter.
+- List format:
 
   ```markdown
-  | Skill | Description |
-  |---|---|
-  | [skill-name](skills/category/skill-name/SKILL.md) | …description… |
+  ### category
+
+  Short explanation of this skill group.
+
+  - [skill-name](skills/category/skill-name/SKILL.md) — …description…
   ```
 
-- Do not add any row for a skill that has no `SKILL.md`.
-- Remove the row when a skill folder is deleted.
+- Do not add a bullet for a skill that has no `SKILL.md`.
+- Remove the bullet when a skill folder is deleted.
