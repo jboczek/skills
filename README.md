@@ -10,15 +10,16 @@ install, and manage these skills for Codex, Claude, and Copilot on macOS.
 
 | Skill | Description |
 |---|---|
-| [agents-add-task](skills/agents-add-task/SKILL.md) | Plans initiatives into implementation-ready Symphony tasks and creates validated dependency graphs in Todoist. |
-| [big-picture](skills/big-picture/SKILL.md) | Builds or updates a concise strategic overview of an IT product, feature, or technical solution. |
-| [challenger](skills/challenger/SKILL.md) | Challenges project documents and ideas in short rounds to expose high-impact assumptions, gaps, risks, and contradictions. |
-| [checkpoint](skills/checkpoint/SKILL.md) | Creates or restores an evidence-grounded, durable handoff so interrupted work can continue in another agent session. |
-| [code](skills/code/SKILL.md) | Implements, fixes, or refactors repository code with senior judgment, minimal complexity, and proportionate verification. |
-| [commit](skills/commit/SKILL.md) | Creates a well-formed Git commit from current changes, using session context for its rationale, summary, and test record. |
-| [interview](skills/interview/SKILL.md) | Conducts structured interviews and maintains discovery notes to build deep project context. |
-| [junior-delegate](skills/junior-delegate/SKILL.md) | Produces self-contained, implementation-ready handoffs for well-understood tasks with key decisions already resolved. |
-| [prompt-builder](skills/prompt-builder/SKILL.md) | Creates concise, production-ready prompts for tasks, skills, agents, and workflows. |
-| [to-prd](skills/to-prd/SKILL.md) | Turns rough feature ideas into concise, consistently structured PRDs under `docs/prds/`. |
-| [verify](skills/verify/SKILL.md) | Strictly verifies completed work against explicit requirements and a senior quality bar, then posts the task-level verdict. |
-| [verify-code-review](skills/verify-code-review/SKILL.md) | Performs a single-reviewer, read-only semantic review of committed implementation changes, standalone or nested under `verify`. |
+| [agents-add-task](skills/utils/agents-add-task/SKILL.md) | Plans Symphony tasks and creates their validated Todoist dependency graph. |
+| [big-picture](skills/1-planning-process/big-picture/SKILL.md) | Builds a concise, product-minded overview of an IT product, feature, or technical solution. |
+| [challenger](skills/1-planning-process/challenger/SKILL.md) | Challenges plans and project documents to surface assumptions, gaps, risks, contradictions, and missing evidence. |
+| [checkpoint](skills/2-delivery-process/checkpoint/SKILL.md) | Creates or restores an evidence-grounded handoff for interrupted work. |
+| [code](skills/2-delivery-process/code/SKILL.md) | Implements or refactors repository code with proportionate verification. |
+| [commit](skills/2-delivery-process/commit/SKILL.md) | Creates a well-formed Git commit using session context for rationale and summary. |
+| [implementation-plan](skills/1-planning-process/implementation-plan/SKILL.md) | Creates or shortens a preliminary implementation plan for review before implementation. |
+| [interview](skills/1-planning-process/interview/SKILL.md) | Conducts structured interviews to gather detailed project context. |
+| [junior-delegate](skills/1-planning-process/junior-delegate/SKILL.md) | Prepares implementation-ready handoffs for well-understood tasks. |
+| [prep-req](skills/1-planning-process/prep-req/SKILL.md) | Turns rough ideas and requests into concise, reviewable product requirements. |
+| [prompt-builder](skills/utils/prompt-builder/SKILL.md) | Creates production-ready prompts for tasks, skills, agents, and workflows. |
+| [verify](skills/2-delivery-process/verify/SKILL.md) | Verifies deliverables against requirements and posts an evidence-based task verdict. |
+| [verify-code-review](skills/2-delivery-process/verify-code-review/SKILL.md) | Reviews committed implementation changes for semantic gaps and technical risks. |
